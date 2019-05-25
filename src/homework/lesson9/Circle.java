@@ -7,7 +7,6 @@ public class Circle {
 
     }
 
-
     public Circle(double newRadius) {
         radius = newRadius;
     }
