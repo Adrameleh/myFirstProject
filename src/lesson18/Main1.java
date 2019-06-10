@@ -11,5 +11,10 @@ public class Main1 {
 
         tournament.printToConsole();
         tournament.printWinner();
+        tournament.minusToTeam("Dinamo", 4);
+        tournament.printToConsole();
+        tournament.minusToTeam("Ufcm",1);
+        System.out.println();
+        tournament.printMiddlePoints();
     }
 }

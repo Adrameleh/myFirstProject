@@ -39,10 +39,18 @@ public class Tournament {
         if (table.containsKey(teamName)) {
             if (table.get(teamName) > points) {
                 table.replace(teamName, table.get(teamName) - points);
-            }else
+            } else
                 table.replace(teamName, 0);
         } else {
-
+            System.out.println("no team with this name: " + teamName);
         }
+    }
+
+    public void printMiddlePoints(){
+        int summaryOfPoints = 0;
+        for (String key : table.keySet()){
+            summaryOfPoints += table.get(key);
+        }
+        System.out.println((double)summaryOfPoints/table.size());
     }
 }
